@@ -10,7 +10,7 @@ import warnings
 from numbers import Integral, Real
 
 import numpy as np
-from ccluster.size import constrained_k_means
+from .ckmeans import constrained_k_means
 
 from sklearn.base import (
     BaseEstimator,
