@@ -1,6 +1,9 @@
 # ccluster: a package for clustering with size constraints
 
-[![PyPI version](https://badge.fury.io/py/ccluster.svg)](https://pypi.org/project/ccluster) [![Docs](https://readthedocs.org/projects/ccluster/badge/?version=latest)](https://ccluster.readthedocs.io/)
+[![PyPI version](https://badge.fury.io/py/ccluster.svg)](https://pypi.org/project/ccluster) 
+![Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-4AC51C)
+[![Run Status](https://github.com/chakib401/ccluster/actions/workflows/python-test.yml/badge.svg)](https://github.com/chakib401/ccluster/actions) 
+[![Docs Status](https://readthedocs.org/projects/ccluster/badge/?version=latest)](https://ccluster.readthedocs.io/)
 
 *ccluster* is a library for performing clustering with exhaustive or partial cluster size constraints. 
 It currently provides two constrained clustering algorithms: a constrained *k*-means suitable for euclidean data, and a constrained graph clustering algorithm based on spectral clustering.
