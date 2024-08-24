@@ -13,6 +13,7 @@ Homepage = "https://github.com/chakib401/ccluster"
 
 [build-system]
 requires = [
+    'setuptools',
     'matplotlib>=3.9.1',
     'numpy>=2.0.1',
     'POT>=0.9.4',
