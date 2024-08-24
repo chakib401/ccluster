@@ -27,11 +27,11 @@ from sklearn.utils import check_array, check_random_state
 from sklearn.utils._openmp_helpers import _openmp_effective_n_threads
 from sklearn.utils._param_validation import Hidden, Interval, StrOptions, validate_params
 from sklearn.utils.extmath import row_norms
-from sklearn.utils.fixes import threadpool_info, threadpool_limits
 from sklearn.utils.sparsefuncs import mean_variance_axis
 from sklearn.utils.validation import (
     _is_arraylike_not_scalar,
     check_is_fitted, )
+from threadpoolctl import threadpool_limits, threadpool_info
 
 from .cbase import CBase
 
@@ -179,7 +179,7 @@ def _relocate_empty_clusters_dense(X, idx_unconstrained, centers_new, weight_in_
             centers_new[old_cluster_id] = weight_in_clusters[old_cluster_id] * centers_new[old_cluster_id] - X[far_idx]
             centers_new[old_cluster_id] = centers_new[old_cluster_id] / (weight_in_clusters[old_cluster_id]-1)
             if sp.issparse(X):
-                centers_new[empty_cluster_id] = X[far_idx].A
+                centers_new[empty_cluster_id] = X[far_idx].toarray()
             else:
                 centers_new[empty_cluster_id] = X[far_idx]
 
