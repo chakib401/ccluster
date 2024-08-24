@@ -5,9 +5,9 @@
 *ccluster* is a library for performing clustering with exhaustive or partial cluster size constraints. 
 It provides two constrained clustering algorithms: a constrained *k*-means suitable for euclidean data, and a constrained graph clustering algorithm based on spectral clustering.
 
-| ![k-means example 1](source/_static/km1.png)             | ![k-means example 2](source/_static/km2.png)             | ![k-means example 3](source/_static/km3.png)            |
+| ![k-means example 1](https://github.com/chakib401/ccluster/blob/main/source/_static/km1.png)             | ![k-means example 2](https://github.com/chakib401/ccluster/blob/main/source/_static/km2.png)             | ![k-means example 3](https://github.com/chakib401/ccluster/blob/main/source/_static/km3.png)            |
 |----------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|
-| ![spectral clustering example 1](source/_static/sc1.png) | ![spectral clustering example 2](source/_static/sc2.png) | ![spectral clustering example 3](source/_static/sc3.png) |
+| ![spectral clustering example 1](https://github.com/chakib401/ccluster/blob/main/source/_static/sc1.png) | ![spectral clustering example 2](https://github.com/chakib401/ccluster/blob/main/source/_static/sc2.png) | ![spectral clustering example 3](https://github.com/chakib401/ccluster/blob/main/source/_static/sc3.png) |
 
 ### Installation
 
