@@ -2,7 +2,6 @@ import unittest
 from collections import Counter
 
 import numpy as np
-from matplotlib import pyplot as plt
 from scipy.sparse import csr_matrix
 from sklearn.datasets import make_blobs
 
@@ -31,9 +30,6 @@ class TestConstrainedKMeans(unittest.TestCase):
                                                                    cluster_sizes=test_case)
 
                 _, counts = np.unique(predicted_labels, return_counts=True)
-                plt.scatter(x[:, 0], x[:, 1], c=predicted_labels, alpha=.5)
-                plt.scatter(centers[:, 0], centers[:, 1], marker='x', color='k')
-                plt.show()
                 self.assertTrue(Counter(test_case) <= Counter(counts))
 
     def test_ko(self):
@@ -70,9 +66,6 @@ class TestConstrainedKMeans(unittest.TestCase):
                                                                    init=init,
                                                                    cluster_sizes=test_case)
                 _, counts = np.unique(predicted_labels, return_counts=True)
-                plt.scatter(x[:, 0], x[:, 1], c=predicted_labels, alpha=.5)
-                plt.scatter(centers[:, 0], centers[:, 1], marker='x', color='k')
-                plt.show()
                 self.assertTrue(Counter(test_case) <= Counter(counts))
 
     def test_sparse_ko(self):
@@ -111,9 +104,6 @@ class TestConstrainedKMeans(unittest.TestCase):
                 km.fit_transform(x_sparse)
                 centers = km.cluster_centers_
                 _, counts = np.unique(predicted_labels, return_counts=True)
-                plt.scatter(x[:, 0], x[:, 1], c=predicted_labels, alpha=.5)
-                plt.scatter(centers[:, 0], centers[:, 1], marker='x', color='k')
-                plt.show()
                 self.assertTrue(Counter(test_case) <= Counter(counts))
 
     def test_inertia_ok(self):

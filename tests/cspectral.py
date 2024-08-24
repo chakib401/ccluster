@@ -2,7 +2,6 @@ import unittest
 from collections import Counter
 
 import numpy as np
-from matplotlib import pyplot as plt
 from sklearn.datasets import make_blobs
 
 from ccluster.size import ConstrainedSpectralClustering
@@ -27,8 +26,6 @@ class TestConstrainedKMeans(unittest.TestCase):
             predicted_labels = ConstrainedSpectralClustering(k, cluster_sizes=test_case).fit_predict(x)
 
             _, counts = np.unique(predicted_labels, return_counts=True)
-            plt.scatter(x[:, 0], x[:, 1], c=predicted_labels, alpha=.5)
-            plt.show()
             self.assertTrue(Counter(test_case) <= Counter(counts))
 
     def test_ko(self):
