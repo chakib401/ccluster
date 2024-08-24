@@ -16,9 +16,9 @@ data = np.column_stack([x_coords, y_coords])
 n_clusters = 4
 
 constraints = [
-    [100, 100, 100, 100],
-    [200, 120, 40, 40],
-    [260, 120, 10, 10]
+    [100, 100],
+    [5, 5],
+    [388]
 ]
 
 for cluster_size in constraints:
@@ -35,5 +35,5 @@ for cluster_size in constraints:
     plt.xlabel('X')
     plt.ylabel('Y')
     plt.axis('off')
-    plt.title(f'{n_clusters} clusters with sizes {*cluster_size,}')
+    plt.title(f'{n_clusters} clusters of which {len(cluster_size)} have sizes {*cluster_size,}')
     plt.show()

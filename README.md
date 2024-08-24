@@ -3,11 +3,14 @@
 [![PyPI version](https://badge.fury.io/py/ccluster.svg)](https://pypi.org/project/ccluster)
 
 *ccluster* is a library for performing clustering with exhaustive or partial cluster size constraints. 
-It provides two constrained clustering algorithms: a constrained *k*-means suitable for euclidean data, and a constrained graph clustering algorithm based on spectral clustering.
+It currently provides two constrained clustering algorithms: a constrained *k*-means suitable for euclidean data, and a constrained graph clustering algorithm based on spectral clustering.
 
-| ![k-means example 1](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/km1.png)             | ![k-means example 2](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/km2.png)             | ![k-means example 3](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/km3.png)            |
+
+For more details, please refer to the [documentation](https://ccluster.readthedocs.io/). 
+
+| ![k-means example 1](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/km1.png)             | ![k-means example 2](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/km2.png)             | ![k-means example 3](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/km3.png)            |
 |----------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|
-| ![spectral clustering example 1](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/sc1.png) | ![spectral clustering example 2](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/sc2.png) | ![spectral clustering example 3](https://github.com/chakib401/ccluster/blob/main/docs_src/_static/sc3.png) |
+| ![spectral clustering example 1](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/sc1.png) | ![spectral clustering example 2](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/sc2.png) | ![spectral clustering example 3](https://raw.githubusercontent.com/chakib401/ccluster/main/docs_src/_static/sc3.png) |
 
 ### Installation
 
