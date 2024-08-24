@@ -53,6 +53,10 @@ exclude_patterns = []
 
 master_doc = "index"
 
+# Remove view source code option
+
+html_show_sourcelink = False
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
