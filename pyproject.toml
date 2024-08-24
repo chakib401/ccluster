@@ -14,7 +14,7 @@ Homepage = "https://github.com/chakib401/ccluster"
 [build-system]
 requires = [
     'matplotlib>=3.9.1',
-    'numpy>=2.1.0',
+    'numpy>=2.0.1',
     'POT>=0.9.4',
     'scikit_learn>=1.5.1',
     'scipy>=1.13.1',
