@@ -7,14 +7,14 @@ It provides two constrained clustering algorithms: a constrained *k*-means suita
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
    :caption: API Documentation
 
    api/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
    :caption: Examples
 
